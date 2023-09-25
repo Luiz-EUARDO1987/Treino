@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
 int main()
 {
     // declaração de variaveis
@@ -16,7 +18,7 @@ int main()
 
     printf("digite seu peso\n");
     scanf("%f", &peso);
-    system("cls");
+    system("cls || clear");
 
     fflush(stdin); // comondo para limpar o cash e não guandar a entrda enter na variavel char
     printf("digite seu sexo\n");
@@ -28,6 +30,7 @@ int main()
     gets(nome);
    // scanf("%s", &nome);
   // fgets(nome,100,stdin);
+ //nome[strcspm(nome,"\n")] =1;//comondo usado pra remover o \n(enter)
   system("cls");
 
     printf("idade: %i \n peso: %.2f \n sexo: %c \n nome: %s", idade, peso, sexo,nome);
