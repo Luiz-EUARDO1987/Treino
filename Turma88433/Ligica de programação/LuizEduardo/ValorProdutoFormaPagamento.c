@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define v 'p'
+
 int main()
 {
     char forma;
     int parcelas;
-    float valor, pagar;
-    int se;
+    int valor;
+    float valorTotal;
+
 
     printf("digite o valor do produto\n");
-    scanf("%f", &valor);
+    scanf("%i", &valor);
     fflush(stdin);
     system("cls || clear");
 
@@ -18,26 +19,18 @@ int main()
     scanf("%c", &forma);
     fflush(stdin);
     system("cls || clear");
-
-    se = strcmp(forma, v);
-    printf("%c\n %i ",forma,se)
     
-    if (se == 0)
-    {
-        printf("Digite o numero de parcelas, sendo que o max é 6.\n ");
-        scanf("%i", & parcelas);
-        fflush(stdin);
-        system("cls || clear");
-    }
-
     switch (forma)
     {
     case 'v':
-        pagar = ((valor * 10) / 100) - valor;
+        valorTotal = ((valor * 10) / 100) - valor;
         break;
 
     case 'p':
-        pagar = valor / parcelas;
+        printf("Digite o numero de parcelas, sendo que o max é 6.\n ");
+        scanf("%i", & parcelas);
+        system("cls || clear");
+       valorTotal = valor / parcelas;
         break;
 
     default:
