@@ -9,7 +9,7 @@ int main()
 {
     char login[250] = "";
     char senha[250] = "";
-    int verifica01,verifica02;
+    int verifica01,verifica02,confirmar;
 setlocale(LC_ALL,"portuguese");
 do
 {  
@@ -23,6 +23,14 @@ do
 
 verifica01=strcmp(login,loginVerdade);
 verifica02=strcmp(senha,senhaVedade);
+if (verifica01 == 0 && verifica02 == 0)
+{
+    confirmar = 1;
+}
+printf("login ou senha invalidos.");
+sleep(5);
+system("cls || clear");
 
-}while(verifica01 != 0 && verifica02 != 0);
+}while(confirmar != 1);
+printf("Seja-bem vino");
 }
