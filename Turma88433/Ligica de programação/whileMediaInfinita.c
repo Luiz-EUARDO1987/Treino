@@ -12,7 +12,7 @@
 int main()
 {
     char resposta[250] ="";
-    char escolhaCN = "";
+    char escolhaCN ="";
     int fim = 1;
     float nota = 0;
     float media = 0;
