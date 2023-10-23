@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "ms-dotnettools.vscodeintellicode-csharp"
+        "ms-dotnettools.vscodeintellicode-csharp",
+        "danielpinto8zz6.c-cpp-compile-run",
+        "tobysmith568.run-in-powershell"
     ]
 }

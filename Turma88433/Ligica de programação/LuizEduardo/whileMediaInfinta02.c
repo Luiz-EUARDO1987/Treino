@@ -41,7 +41,7 @@ int main()
         //getchar();
         system("cls || clear");//limpar tela
         maiuscula(letraEscolha,letraEscolha);//chamando a função para as letra serem convertidas para maiúsculas
-       
+      
 
         if(strcmp(letraD,letraEscolha)==0)//função condicional com uma comparação de strings.
         {
@@ -63,7 +63,7 @@ int main()
        printf(" letraEscolhida = %s\n letraN = %s\n",letraEscolha,letraN);
        printf(" Sair = %i\ncontinuar: %s\n",sair,letraD);
        printf(" contador = %i\nmedia: %.1f\n",contador,media);
-       sleep(5);// pausa cinco segundos.
+    //sleep(5);// pausa cinco segundos.
        system("cls || clear");
     }while(sair != 0);
     media /= contador;
