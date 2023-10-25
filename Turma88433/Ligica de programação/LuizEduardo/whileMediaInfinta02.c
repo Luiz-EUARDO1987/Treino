@@ -49,9 +49,9 @@ int main()
             {
                 
             printf("Digite a nota: %i\n",contador+1);// informação para o usuário saber o que esta sendo solicitado.
-            scanf("%f", &nota);//entrada de dados, nota
+            scanf("%f",&nota);//entrada de dados, nota
             system("cls || clear");//limpar tela
-            if(nota>=0 && nota<=10)//estrutura de decisão para media e contador
+            if(nota>0 && nota<=10)//estrutura de decisão para media e contador
             {
                 media += nota;
                 contador++;
@@ -63,7 +63,7 @@ int main()
        printf(" letraEscolhida = %s\n letraN = %s\n",letraEscolha,letraN);
        printf(" Sair = %i\ncontinuar: %s\n",sair,letraD);
        printf(" contador = %i\nmedia: %.1f\n",contador,media);
-    //sleep(5);// pausa cinco segundos.
+       sleep(5);// pausa cinco segundos.
        system("cls || clear");
     }while(sair != 0);
     media /= contador;
@@ -71,7 +71,7 @@ int main()
     {
         strcpy(estado,"Aprovado");
     }
-    else if(media > 5)
+    else if(media >= 5)
     {
         strcpy(estado,"Recuperação");
     }
