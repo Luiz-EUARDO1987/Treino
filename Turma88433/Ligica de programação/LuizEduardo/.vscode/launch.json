@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/gelu/VusialEstudioCode/C/Treino/Treino/Turma88433/Ligica de programação/LuizEduardo",
-      "program": "/home/gelu/VusialEstudioCode/C/Treino/Treino/Turma88433/Ligica de programação/LuizEduardo/build/Debug/outDebug",
+      "cwd": "/home/gelu/VusialEstudioCode/C/Treino/Turma88433/Ligica de programação/LuizEduardo",
+      "program": "/home/gelu/VusialEstudioCode/C/Treino/Turma88433/Ligica de programação/LuizEduardo/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
