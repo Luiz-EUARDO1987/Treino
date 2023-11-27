@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 int main()
 {
@@ -8,6 +9,7 @@ int main()
         char nome[200];
         int idade;
         float notas[3];
+        char estado[200];
     };
     int i,j;
     float media[3],soma=0;
@@ -23,6 +25,8 @@ int main()
         scanf("%i", &alunos[i].idade);
         getchar();
         system("cls || clear");
+
+        soma=0;
         for ( j = 0; j < 3; j++)
         {
              printf("Digite  as notas\n");
@@ -32,6 +36,19 @@ int main()
              getchar();
         }
         media[i]=soma/(float)3;
+        if (media[i]>=7)
+        {
+            strcpy(alunos[i].estado,"Aprovado!");
+        }
+        else if (media[i]>=5)
+        {
+            strcpy(alunos[i].estado,"Recuperação");         
+        }
+        else
+        {
+            strcpy(alunos[i].estado,"Reprovado");
+        }
+        
     }
     
 
@@ -44,6 +61,7 @@ int main()
              printf("notas: %.2f\n",alunos[i].notas[j]);
         }
         printf("media: %.2f\n",media[i]);
+        printf("Estado: %s\n",alunos[i].estado);
     }
     
     
