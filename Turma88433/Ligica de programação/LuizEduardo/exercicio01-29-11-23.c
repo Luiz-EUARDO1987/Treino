@@ -12,7 +12,7 @@ int main()
     }livros[3];
     //struct bibliotecaLivros livros[3];
     int i=0;
-    float desc[5]={0};
+    float desc[3]={0};
     float transporte;
     do
     {
@@ -46,19 +46,20 @@ int main()
  
     return 0;
 }//fimMain
-float desconto(float p)
+float desconto(float precoDesconto)
 {
-    if (p>=100) 
+    float resultado;
+    if (precoDesconto >=100) 
     {
-        p=((p*10)/100);
+        resultado=((precoDesconto*10)/100);
     }
-    else if (p>=50) 
+    else if (precoDesconto>=50) 
     {
-        p=((p*5)/100); 
+        resultado=((precoDesconto*5)/100); 
     }
     else
     {
-        p =0;
+        resultado =0;
     }
-    return p;
+    return resultado;
 }
