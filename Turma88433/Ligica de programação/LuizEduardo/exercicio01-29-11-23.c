@@ -36,7 +36,7 @@ int main()
 
         transporte = livros[i].preco;
         transporte = desconto(transporte);
-        desc[i] = transporte;
+        
 
     } while (i<3);
    for ( i = 0; i < 3; i++)
@@ -51,15 +51,15 @@ float desconto(float precoDesconto)
     float resultado;
     if (precoDesconto >=100) 
     {
-        resultado=((precoDesconto*10)/100);
+       return resultado=(precoDesconto*10)/100;
     }
     else if (precoDesconto>=50) 
     {
-        resultado=((precoDesconto*5)/100); 
+       return resultado=(precoDesconto*5)/100; 
     }
     else
     {
-        resultado =0;
+       return resultado =0;
     }
-    return resultado;
+   
 }
