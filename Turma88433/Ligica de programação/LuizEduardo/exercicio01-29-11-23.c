@@ -32,12 +32,12 @@ int main()
         scanf("%f",&livros[i].preco);
         getchar();
         system("cls || clear");
-        i++;
 
         transporte = livros[i].preco;
         transporte = desconto(transporte);
-        
+        desc[i]=transporte;
 
+        i++;
     } while (i<3);
    for ( i = 0; i < 3; i++)
    {
