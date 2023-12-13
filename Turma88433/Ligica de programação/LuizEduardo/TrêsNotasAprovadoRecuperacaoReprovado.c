@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
-
+#define tamanhoCha 250
+char estado(float media);
+    char resultado[tamanhoCha];
 int main()
 {
     int contador = 0;
     float nota = 0;
     float media = 0;
-    char resultado[250] = "";
     setlocale(LC_ALL,"");
     
     do
@@ -27,11 +28,20 @@ int main()
         }
     }while(contador < 3);
     media = media / contador;
+    estado(media);
+    //strcpy(resultado,estado(media));
+    printf("\tsituação: %s\nmedia: %.1f",resultado,media);
+    return 0;
+}
+
+char estado(float media)
+{
+    //char resultado01[tamanhoCha];
     if(media >= 7)
     {
         strcpy(resultado, "Aprovado");
     }
-    else if(nota >= 5 && nota < 7)
+    else if(media>=5)
     {
         strcpy(resultado, "Recuperação");
     }
@@ -39,6 +49,5 @@ int main()
     {
         strcpy(resultado,"reprovado");
     }
-    printf("situação: %s\nmedia: %.1f",resultado,media);
-    return 0;
+    return resultado[0];
 }
